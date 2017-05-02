@@ -1,0 +1,67 @@
+/* 
+
+light blue color 	#a7ddea
+
+
+*/
+.hiden {
+	display: none;
+}
+.test {
+	position: absolute;
+	top: 400px;
+	right:  400px;
+	height: 400px;
+	width:400px;
+	border: 1px solid red;
+}
+.content_test {
+	position: relative;
+}
+.h1_test {
+	position: absolute;
+	left: 0;
+}
+
+.section {
+  text-align:center;
+  font-size: 3em;
+}
+#callbacks-placeholder{
+  position:fixed;top:50px;left:50px;color:black;z-index:999;
+}
+
+.phone_container {
+	position: relative;
+	
+	z-index: 100;
+	
+}
+.phone_frame {
+	z-index: 100;
+
+}
+.phone_content {
+    position: absolute;
+    overflow: hidden;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 47px;
+    
+	width: 241px;
+    height: 424px;
+    z-index: -1;
+}
+.phone_content img { 
+	width: 241px;
+	z-index: 10;
+ }
+#animation1	{
+	position:fixed;top:100px;left:100px;color:white;z-index:999;
+	height: 200px;
+	width: 400px;
+	border: 1px solid red;
+}
