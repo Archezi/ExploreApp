@@ -3,7 +3,7 @@ var deleteLog = false;
 
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		sectionsColor: ['#a7ddea', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+		sectionsColor: ['#f6f6f6', '#f6f6f6', '#7BAABE', 'whitesmoke', '#ccddff'],
 		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 		menu: '#menu',
 		onLeave: function(index, nextIndex, direction){

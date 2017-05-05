@@ -4,24 +4,15 @@ light blue color 	#a7ddea
 
 
 */
+
+body{
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
 .hiden {
 	display: none;
 }
-.test {
-	position: absolute;
-	top: 400px;
-	right:  400px;
-	height: 400px;
-	width:400px;
-	border: 1px solid red;
-}
-.content_test {
-	position: relative;
-}
-.h1_test {
-	position: absolute;
-	left: 0;
-}
+
 
 .section {
   text-align:center;
@@ -64,4 +55,115 @@ light blue color 	#a7ddea
 	height: 200px;
 	width: 400px;
 	border: 1px solid red;
+}
+.images_main {
+	height: 100vh;
+	position: relative;
+}
+.img_container {
+	position: relative;
+	
+	
+  	margin: 0 auto;
+	
+	
+
+}
+
+.smarthphone  {
+    width: 228px;
+    float: right;
+    position: absolute;
+    bottom: 200px;
+    left: 400px;
+}
+.tablet {
+	width: 400px;
+    float: right;
+    position: absolute;
+    bottom: 200px;
+	
+
+
+}
+.lp_button_img {
+	margin-left: -20px;
+}
+
+
+/*
+	TYPOGRAPHY
+*/
+.content_container {
+	text-align: left;
+	padding: 100px 20px 100px
+}
+
+.lp_heading {
+	font-size: 36px;
+	font-weight: 700;
+}
+.lp_caption {
+	font-size: 18px;
+	font-weight: 300;
+	
+    width: 450px;
+}
+.lp_b_text {
+	font-size: 24px;
+	font-weight: 500;
+}
+.lp_notyfi {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.page2_left {
+	background: #fff;
+	height: 100vh;
+	margin-top: -20px;
+}
+
+
+
+/*PAGE 2 */
+
+.page2_logo {
+	height: 100px;
+}
+.page2_left_container {
+	padding: 50px;
+	text-align: center;
+}
+.promo_img_container {
+
+}
+.page2_right {
+	height: 100vh;
+}
+.screen_img {
+	width: 300px;
+	padding-left: 30px;
+}
+
+.promo_content_conteiner {
+	padding: 100px 20px;
+	margin-left: 50px;
+	height: 523px;
+	width: 30%;
+	text-align: left;
+}
+.social {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	width: 200px;
+	height: 50px;
+	
+}
+.social img {
+	
+	height: 25px;
+	margin-left: 20px;
+	float: right;	
 }
