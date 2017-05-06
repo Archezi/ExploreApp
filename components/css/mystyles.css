@@ -9,6 +9,9 @@ body{
 	font-size: 16px;
 	font-family: 'Lato', 'Roboto', sans-serif;
 }
+.row {
+	margin-bottom: 0;
+}
 .section {
   text-align:center;
 }
