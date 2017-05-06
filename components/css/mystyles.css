@@ -7,129 +7,88 @@ light blue color 	#a7ddea
 
 body{
 	font-size: 16px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', 'Roboto', sans-serif;
 }
-.hiden {
-	display: none;
-}
-
-
 .section {
   text-align:center;
-  font-size: 3em;
-}
-#callbacks-placeholder{
-  position:fixed;top:50px;left:50px;color:black;z-index:999;
 }
 
-.phone_container {
-	position: relative;
-	
-	z-index: 100;
-	
-}
-.phone_frame {
-	z-index: 100;
-
-}
-.phone_content {
-    position: absolute;
-    overflow: hidden;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 47px;
-    
-	width: 241px;
-    height: 424px;
-    z-index: -1;
-}
-.phone_content img { 
-	width: 241px;
-	z-index: 10;
- }
-#animation1	{
-	position:fixed;top:100px;left:100px;color:white;z-index:999;
-	height: 200px;
-	width: 400px;
-	border: 1px solid red;
-}
 .images_main {
 	height: 100vh;
 	position: relative;
 }
 .img_container {
 	position: relative;
-	
-	
   	margin: 0 auto;
-	
-	
-
-}
-
-.smarthphone  {
-    width: 228px;
-    float: right;
-    position: absolute;
-    bottom: 200px;
-    left: 400px;
-}
-.tablet {
-	width: 400px;
-    float: right;
-    position: absolute;
-    bottom: 200px;
-	
-
-
 }
 .lp_button_img {
-	margin-left: -20px;
+	
+	height: 50px;
 }
-
-
+.main_img {
+	width: 80%;
+}
+.p2_content {
+	padding: 50px 0 ;
+}
 /*
 	TYPOGRAPHY
 */
 .content_container {
 	text-align: left;
-	padding: 100px 20px 100px
-}
+    padding: 100px 20px 100px;
+    margin-left: auto;
+    margin-right: auto;
 
+}
 .lp_heading {
 	font-size: 36px;
+	padding: 7px 0;
 	font-weight: 700;
 }
 .lp_caption {
+	padding: 7px 0;
 	font-size: 18px;
 	font-weight: 300;
-	
-    width: 450px;
+    max-width: 450px;
 }
 .lp_b_text {
-	font-size: 24px;
-	font-weight: 500;
+	font-size: 18px;
+	font-weight: 700;
 }
 .lp_notyfi {
 	font-size: 12px;
+	line-height: 12px;
 	font-weight: 500;
 }
-
 .page2_left {
 	background: #fff;
 	height: 100vh;
 	margin-top: -20px;
 }
 
+.p2_h2 {
+	font-family: 'Roboto';
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.5em;
+	margin-top: 0;
+	margin-bottom: 7px;
 
+}
+.p2_p {
+	font-family: 'Lato';
+	max-width: 300px;
+	font-size: 16px;
+	line-height: 1.5em
+	font-weight: 300;
+	margin: 0;
+}
 
 /*PAGE 2 */
 
 .page2_logo {
-	height: 100px;
+	width: 80%;
 }
 .page2_left_container {
 	padding: 50px;
@@ -142,15 +101,12 @@ body{
 	height: 100vh;
 }
 .screen_img {
-	width: 300px;
+	width: 80%;
 	padding-left: 30px;
 }
 
 .promo_content_conteiner {
-	padding: 100px 20px;
-	margin-left: 50px;
-	height: 523px;
-	width: 30%;
+	
 	text-align: left;
 }
 .social {
@@ -159,6 +115,7 @@ body{
 	right: 50px;
 	width: 200px;
 	height: 50px;
+	z-index: 9999;
 	
 }
 .social img {
@@ -166,4 +123,234 @@ body{
 	height: 25px;
 	margin-left: 20px;
 	float: right;	
+}
+.fixed_div {
+	position: fixed;
+	top: 50px;
+	left:0;
+	z-index: 99999;
+}
+.box {
+	
+	position: relative;
+	margin-top: 5px;
+	background: #5d5d5d;
+	width: 50px;
+	height: 50px;
+	border-radius: 0px 5px 5px 0px;
+}
+.return_box {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 9999;
+	opacity: 0.5;
+}
+.box1 {
+	position: relative;
+	margin-top: 5px;
+	background: #5d5d5d;
+	width: 50px;
+	height: 50px;
+	/*border-radius: 0px 5px 5px 0px;*/
+}
+.return_icon {
+	width: 25px;
+}
+.box img,
+.box1 img{
+	
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	
+	
+}
+.facebook_icon,
+.insta_icon {
+	height: 30px;
+}
+.mail_icon {
+	width: 30px;
+}
+
+
+
+
+
+
+.modal1 {
+	z-index: 9999;
+}
+
+
+
+
+
+/*ANIMATED SCROLL BUTTON*/
+.scroll_div {
+	position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    margin-bottom: 50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+    z-index: 9999;
+	}
+
+	.scroll_button {
+	    position: absolute;
+	    top: 0;
+	    left: 50%;
+	    width: 30px;
+	    height: 50px;
+	    margin-left: -15px;
+	    border: 2px solid #5d5d5d;
+	    border-radius: 50px;
+	    box-sizing: border-box;
+	}
+
+	.scroll_button::before {
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		content: '';
+		width: 6px;
+		height: 6px;
+		margin-left: -3px;
+		background-color: #5d5d5d;
+		border-radius: 100%;
+		-webkit-animation: sdb10 2s infinite;
+		animation: sdb10 2s infinite;
+		box-sizing: border-box;
+	}
+	@-webkit-keyframes sdb10 {
+		0% {
+			-webkit-transform: translate(0, 0);
+			opacity: 0;
+		}
+		40% {
+			opacity: 1;
+		}
+		80% {
+			-webkit-transform: translate(0, 20px);
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	@keyframes sdb10 {
+		0% {
+			transform: translate(0, 0);
+			opacity: 0;
+		}
+		40% {
+			opacity: 1;
+		}
+		80% {
+			transform: translate(0, 20px);
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+	.main_img {
+		/*width: 300px;*/
+	}
+	/*.images_main {
+		height: 50vh;
+	}
+	.content_container {
+		text-align: center;
+		height: 50vh;
+		padding: 0 20px;
+	}
+	.lp_heading {
+		font-size: 24px;
+		font-weight: 700;
+	}
+	.lp_caption {
+		font-size: 16px;
+		font-weight: 300;
+	    max-width: 450px;
+	}
+	.lp_b_text {
+		font-size: 14px;
+		font-weight: 500;
+	}
+	.lp_notyfi {
+		font-size: 12px;
+		font-weight: 500;
+	}
+	.lp_button_img {
+		height: 50px;
+	}
+	.screen_img {
+		height: 50vh;
+		width: auto;
+	}*/
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+
+/*.main_img {
+	width: 400px;
+}
+.content_container {
+	width: 100%;
+}*/
+
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
 }
