@@ -7,7 +7,7 @@ $(document).ready(function() {
 	// Only on small devices
 
 			if ( $(window).width() < 514) {
-		     $( "#mainPageContent, #mainPageImages, .p2_content ").removeClass('valign-wrapper');
+		     $( "#mainPageContent, #mainPageImages, .p2_content, .page2_right ").removeClass('valign-wrapper');
 		    }
 		    else {}
 
@@ -16,9 +16,9 @@ $(document).ready(function() {
 			 $(window).resize(function() {
 			    /*If browser resized, check width again */
 			    if ($(window).width() < 514) {
-			     $("#mainPageContent, #mainPageImages, .p2_content ").removeClass('valign-wrapper');
+			     $("#mainPageContent, #mainPageImages, .p2_content, .page2_right ").removeClass('valign-wrapper');
 			    }
-			    else {$("#mainPageContent, #mainPageImages, .p2_content ").addClass('valign-wrapper');}
+			    else {$("#mainPageContent, #mainPageImages, .p2_content, .page2_right ").addClass('valign-wrapper');}
 			 });
 
 			
