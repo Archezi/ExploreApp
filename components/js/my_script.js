@@ -2,6 +2,29 @@ var deleteLog = false;
 
 
 $(document).ready(function() {
+
+	// Remove Class from first page to align verticle center 
+	// Only on small devices
+
+			if ( $(window).width() < 514) {
+		     $( "#mainPageContent, #mainPageImages, .p2_content ").removeClass('valign-wrapper');
+		    }
+		    else {}
+
+		
+
+			 $(window).resize(function() {
+			    /*If browser resized, check width again */
+			    if ($(window).width() < 514) {
+			     $("#mainPageContent, #mainPageImages, .p2_content ").removeClass('valign-wrapper');
+			    }
+			    else {$("#mainPageContent, #mainPageImages, .p2_content ").addClass('valign-wrapper');}
+			 });
+
+			
+
+
+
 	$('#fullpage').fullpage({
 		sectionsColor: ['#f6f6f6', '#f6f6f6', '#7BAABE', 'whitesmoke', '#ccddff'],
 		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],

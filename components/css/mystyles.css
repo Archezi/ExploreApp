@@ -13,8 +13,11 @@ body{
   text-align:center;
 }
 
-.images_main {
+.full_height {
 	height: 100vh;
+}
+.images_main {
+	
 	position: relative;
 }
 .img_container {
@@ -267,49 +270,44 @@ body{
 
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
+@media only screen and (min-width : 321px) and (max-device-width : 760px) {
 /* Styles */
+	.images_main {
+		height: 30vh;
+		
+	}
 	.main_img {
-		/*width: 300px;*/
+		width: 200px;
 	}
-	/*.images_main {
-		height: 50vh;
+	.img_container {
+		padding: 0; 
+		margin: 0;
 	}
-	.content_container {
-		text-align: center;
-		height: 50vh;
-		padding: 0 20px;
-	}
-	.lp_heading {
-		font-size: 24px;
-		font-weight: 700;
-	}
-	.lp_caption {
-		font-size: 16px;
-		font-weight: 300;
-	    max-width: 450px;
-	}
-	.lp_b_text {
-		font-size: 14px;
-		font-weight: 500;
-	}
-	.lp_notyfi {
-		font-size: 12px;
-		font-weight: 500;
-	}
-	.lp_button_img {
-		height: 50px;
-	}
-	.screen_img {
-		height: 50vh;
-		width: auto;
-	}*/
+
+	/*Social Box */
+		.fixed_div {
+			top: 25px;
+		}
+		.box {
+			
+			
+			width: 25px;
+			height: 25px;
+		}
+	
+	/*Content on main page*/
+		.content_container{ padding: 0;  }
+
+
+	/*Second Page*/
+		.screen_img { padding: 0; margin: 40px 0 0 ; width: 50%; }
 
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
 /* Styles */
+	
 
 }
 
