@@ -78,7 +78,16 @@ $(document).ready(function() {
 
 
 			} else if (index == 2) {
-				console.log("pokaz tylko na index 2");
+				
+	        	
+			} else if (index == 3) {
+				$('.my-slider').unslider({
+				animation: 'fade',
+				autoplay: true,
+				arrows: false,
+				delay: 6000
+
+				});
 			}
 		}
 	});
