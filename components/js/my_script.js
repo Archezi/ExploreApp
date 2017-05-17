@@ -43,33 +43,32 @@ $(document).ready(function() {
 				$('#callbacksDiv').html('');
 			}
 			$('#callbacksDiv').append('<p>onSlideLeave - anchorLink:' + anchorLink + " index:" + index + " slideIndex:" + slideIndex +" direction:" + direction + " nextSlideIndex:" + nextSlideIndex + '</p>');
-			console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
+			// console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
 		},
 		afterRender: function(){
 			$('#callbacksDiv').append('<p>afterRender</p>');
-			console.log("afterRender");
+			//console.log("afterRender");
 		},
 		afterResize: function(){
 			$('#callbacksDiv').append('<p>afterResize</p>');
-			console.log("afterResize");
+			//console.log("afterResize");
 		},
 		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
 			$('#callbacksDiv').append('<p>afterSlideLoad - anchorLink:' + anchorLink + " index:" + index + " slideAnchor:" + slideAnchor +" slideIndex:" + slideIndex + '</p>');
 			deleteLog = true;
-			console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
-			console.log("----------------");
+			//console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
+			//console.log("----------------");
 		},
 		afterLoad: function(anchorLink, index){
             console.log("after Load  " + index);
 			$('#callbacksDiv').append('<p>afterLoad - anchorLink:' + anchorLink + " index:" + index + '</p>');
 			deleteLog = true;
-			console.log('===============');
-			console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
+			//console.log('===============');
+			//console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
 			// Animation on load on first screen 
 			if ( index == 1) {
+				$('.modal').modal();
 				
-				$(".test")
-					.animate({ top: '100'}, 2000, 'easeInSine')
 					
 					
 					
@@ -81,12 +80,17 @@ $(document).ready(function() {
 				
 	        	
 			} else if (index == 3) {
-				$('.my-slider').unslider({
+				var slider =  $('.my-slider').unslider({
 				animation: 'fade',
 				autoplay: true,
 				arrows: false,
 				delay: 6000
 
+				});
+				slider.on('unslider.change', function(event, index, slide) {
+
+					// callback function after each slide
+					// alert('Slide has been changed to ' + index);
 				});
 			}
 		}
